@@ -1,0 +1,47 @@
+.room {
+    width: 340px;
+	height: 175px;
+	background-color: #15499F;
+	margin: 10px;
+	border-radius: 25px;
+	padding: 7.5px;
+    user-select: none;
+}
+.room:hover {
+    background-color: #2B74B9;
+}
+.icons {
+    position: absolute;
+	height: 165px;
+	display: flex;
+	align-items: flex-end;
+	margin-left: 20px;
+}
+.icon {
+    width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+}
+.icon img {
+    width: 25px;
+	height: 25px;
+}
+.icon:hover {
+    background-color: #15499F;
+}
+.nameRoom {
+    margin-top: 10px;
+	margin-left: 20px;
+	letter-spacing: 0.5px;
+	font-size: 28px;
+	color: #FFFFFF;
+}
+.authorRoom {
+    margin-top: 5px;
+	margin-left: 18px;
+	font-size: 14px;
+	color: #FFFFFF;
+}

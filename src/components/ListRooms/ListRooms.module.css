@@ -1,0 +1,16 @@
+.fieldRooms {
+    position: absolute;
+	display: grid;
+	grid-template-columns: 2fr 2fr 1fr;
+	row-gap: 10px;
+	width: 96%;
+	margin-top: 100px;
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%);
+}
+.button {
+    width: 100px;
+    height: 25px;
+    margin-top: 50px;
+}

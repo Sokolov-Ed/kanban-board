@@ -1,0 +1,107 @@
+.jobField {
+    position: absolute;
+	display: flex;
+	height: 275px;
+	width: 94%;
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%);
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 0px 0px 30px 30px;
+	background-color: #FFFFFF;
+	z-index: -1;
+}
+.whoAuthorTask {
+    display: flex;
+	margin-top: 80px;
+	margin-left: 42px;
+	color: #969696;
+	font-size: 10px;
+}
+.authorTask, .dateAdd {
+	display: inline-block;
+}
+.authorTask {
+	margin-right: 5px;
+}
+.dateAdd {
+	margin-left: 5px;
+}
+.nameTask {
+    position: absolute;
+	margin-top: 100px;
+	margin-left: 42px;
+	font-size: 28px;
+}
+.taskDescription {
+    position: absolute;
+	margin-top: 140px;
+	margin-left: 40px;
+	font-size: 14px;
+}
+.fieldDocuments {
+    display: flex;
+	margin-top: 190px;
+	font-size: 18px;
+	position: absolute;
+	margin-left: 40px;
+}
+.fieldForComments {
+    position: absolute;
+	top: 275px;
+	width: 100%;
+	z-index: -2;
+}
+.fieldComments {
+    width: 86%;
+	height: 100%;
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%);
+	padding: 15px;
+	margin-bottom: 170px;
+	font-size: 30px;
+}
+.footer {
+    position: fixed;
+	bottom: 0%;
+	height: 170px;
+	width: 94%;
+	background-color: #FFFFFF;
+	z-index: 1;
+	margin-left: 50%;
+	margin-right: 50%;
+	transform: translate(-50%);
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 30px 30px 0px 0px;
+}
+.fieldWriting {
+    display: flex;
+	justify-content: center;
+}
+.textarea {
+    margin-top: 20px;
+	position: absolute;
+	resize: none;
+	height: 75px;
+	width: 90%;
+	box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	background-color: #F8F8F8;
+	border: 0px;
+	outline: none;
+	padding: 10px;
+	font-size: 14px;
+}
+.input {
+    position: absolute;
+	left: 4.15%;
+	bottom: 15px;
+	background-color: #15499F;
+	border-radius: 10px;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+	border: 0px;
+}
