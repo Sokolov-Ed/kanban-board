@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/kanban-board/static/css/main.1bf81966.chunk.css",
-    "main.js": "/kanban-board/static/js/main.d919bdf3.chunk.js",
-    "main.js.map": "/kanban-board/static/js/main.d919bdf3.chunk.js.map",
-    "runtime-main.js": "/kanban-board/static/js/runtime-main.063c39aa.js",
-    "runtime-main.js.map": "/kanban-board/static/js/runtime-main.063c39aa.js.map",
-    "static/js/2.e80e9619.chunk.js": "/kanban-board/static/js/2.e80e9619.chunk.js",
-    "static/js/2.e80e9619.chunk.js.map": "/kanban-board/static/js/2.e80e9619.chunk.js.map",
-    "static/js/3.3cbae94e.chunk.js": "/kanban-board/static/js/3.3cbae94e.chunk.js",
-    "static/js/3.3cbae94e.chunk.js.map": "/kanban-board/static/js/3.3cbae94e.chunk.js.map",
+    "main.css": "/kanban-board/static/css/main.dd90f3e6.chunk.css",
+    "main.js": "/kanban-board/static/js/main.ebcc256c.chunk.js",
+    "main.js.map": "/kanban-board/static/js/main.ebcc256c.chunk.js.map",
+    "runtime-main.js": "/kanban-board/static/js/runtime-main.36451d8b.js",
+    "runtime-main.js.map": "/kanban-board/static/js/runtime-main.36451d8b.js.map",
+    "static/js/2.b3f08f5d.chunk.js": "/kanban-board/static/js/2.b3f08f5d.chunk.js",
+    "static/js/2.b3f08f5d.chunk.js.map": "/kanban-board/static/js/2.b3f08f5d.chunk.js.map",
+    "static/js/3.1323f33f.chunk.js": "/kanban-board/static/js/3.1323f33f.chunk.js",
+    "static/js/3.1323f33f.chunk.js.map": "/kanban-board/static/js/3.1323f33f.chunk.js.map",
     "index.html": "/kanban-board/index.html",
-    "static/css/main.1bf81966.chunk.css.map": "/kanban-board/static/css/main.1bf81966.chunk.css.map",
-    "static/js/2.e80e9619.chunk.js.LICENSE.txt": "/kanban-board/static/js/2.e80e9619.chunk.js.LICENSE.txt",
+    "static/css/main.dd90f3e6.chunk.css.map": "/kanban-board/static/css/main.dd90f3e6.chunk.css.map",
+    "static/js/2.b3f08f5d.chunk.js.LICENSE.txt": "/kanban-board/static/js/2.b3f08f5d.chunk.js.LICENSE.txt",
     "static/media/index.css": "/kanban-board/static/media/Montserrat-ThinItalic.f7ab4781.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.063c39aa.js",
-    "static/js/2.e80e9619.chunk.js",
-    "static/css/main.1bf81966.chunk.css",
-    "static/js/main.d919bdf3.chunk.js"
+    "static/js/runtime-main.36451d8b.js",
+    "static/js/2.b3f08f5d.chunk.js",
+    "static/css/main.dd90f3e6.chunk.css",
+    "static/js/main.ebcc256c.chunk.js"
   ]
 }
