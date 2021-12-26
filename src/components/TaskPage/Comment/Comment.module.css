@@ -5,6 +5,7 @@
     display: flex;
 	align-items: flex-end;
 	margin-left: 1px;
+	user-select: none;
 }
 .author {
     font-weight: 500;
@@ -21,4 +22,7 @@
 .textComment {
     margin-top: 5px;
 	font-size: 12px;
+	white-space: pre-line;
+	word-break: break-word;
+	word-wrap: break-word;
 }

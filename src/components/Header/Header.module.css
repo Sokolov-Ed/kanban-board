@@ -15,6 +15,11 @@
 	height: 25px;
 	margin-left: 50px;
 }
+.iconVectorBack:hover {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #2B74B9;
+}
 .titleHeader {
     position: absolute;
 	font-size: 26px;
@@ -39,4 +44,45 @@
 	width: 25px;
 	height: 25px;
 	right: 3%;
+}
+.iconExitSection:hover {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #2B74B9;
+}
+.loginOrRegistration {
+	position: absolute;
+	right: 7.5%;
+	display: flex;
+	align-items: center;
+}
+.login {
+	height: 50px;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	margin-right: -0.3px;
+}
+.login:hover {
+	background-color: #2B74B9;
+}
+.iconVertLine {
+	height: 28px;
+	z-index: 1;
+}
+.registration {
+	height: 50px;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	margin-left: -0.4px;
+}
+.registration:hover {
+	background-color: #2B74B9;
 }

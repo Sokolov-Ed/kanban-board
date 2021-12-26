@@ -1,11 +1,25 @@
+import React from 'react';
 import ListRooms from "./ListRooms";
 import { connect } from "react-redux";
 import { addRoom } from "../../Redux/RoomsReducer";
+import { setListRoomsPage } from '../../Redux/HeaderReducer';
 
-let mapstateToProps = (state) => {
-    return {
-        listRooms: state.roomsPage.listRooms
+class ListRoomsContainer extends React.Component {
+    componentDidMount() {
+        this.props.setListRoomsPage();
+    }
+    render() {
+        return (
+            <ListRooms listRooms={this.props.listRooms} authorization={this.props.authorization}/>
+        )
     }
 }
 
-export default connect(mapstateToProps, { addRoom })(ListRooms);
+let mapstateToProps = (state) => {
+    return {
+        listRooms: state.roomsPage.listRooms,
+        authorization: state.authorization
+    }
+}
+
+export default connect(mapstateToProps, { setListRoomsPage })(ListRoomsContainer);

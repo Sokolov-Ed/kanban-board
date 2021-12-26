@@ -7,10 +7,10 @@ const Room = (props) => {
 	return (
 		<NavLink to={`/list-rooms/room/${props.idRoom}`}>
 			<div className={classes.room}>
-				<div className={classes.icons}>
+				{/* <div className={classes.icons}>
 					<div className={classes.icon}><img src={iconExit} /></div>
 					<div className={classes.icon}><img src={iconShare} /></div>
-				</div>
+				</div> */}
 				<div className={classes.nameRoom}>{props.nameRoom}</div>
 				<div className={classes.authorRoom}>{props.authorRoom}</div>
 			</div>

@@ -1,14 +1,25 @@
 import classes from "./Main.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate } from "react-router-dom";
+import CreateRoom from "../OtherPages/CreateRoom";
 
-const Main = () => {
+const Main = ({ authorization, setShowCreateRoom, isShowCreateRoom, addRoom }) => {
+    if (!authorization.isAuth) {
+        return <Navigate replace to="/login" />
+    }
     return (
-        <div className={classes.fieldButtons}>
-            <NavLink to="/list-rooms">
-                <button className={classes.buttonJoinTheRoom}>Приєднатися до списку кімнат</button>
-            </NavLink>
-            <button className={classes.buttonJoinTheRoom}>Приєднатися до кімнати</button>
-            <button className={classes.buttonCreateRoom}>Створити кімнату</button>
+        <div>
+            {isShowCreateRoom && <CreateRoom setShowCreateRoom={setShowCreateRoom}
+                                            authorization={authorization}
+                                            addRoom={addRoom}/>}
+            <div className={classes.fieldButtons}>
+                <NavLink to="/list-rooms">
+                    <button className={classes.buttonJoinTheRoom}>Приєднатися до списку кімнат</button>
+                </NavLink>
+                {(authorization.authorized.isTeacher || authorization.authorized.isAdmin) &&
+                    <button className={classes.buttonCreateRoom}
+                        onClick={() => setShowCreateRoom(true)}>Створити кімнату</button>
+                }
+            </div>
         </div>
     )
 }

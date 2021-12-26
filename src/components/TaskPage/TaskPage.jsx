@@ -1,16 +1,31 @@
 import Comment from './Comment/Comment';
 import classes from './TaskPage.module.css';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { Formik, Field, Form, resetForm } from 'formik';
-import { useState } from 'react';
+import * as Yup from 'yup';
+
+const SignupSchema = Yup.object().shape({
+    text: Yup.string()
+        .min(2, 'Занадто короткий коментар!')
+        .max(250, 'Занадто довгий коментар!')
+        .required('Поле порожнє'),
+});
 
 const TaskPage = (props) => {
     let idRoom = useParams().idRoom;
     let idTask = useParams().idTask;
+    const filteredNameRoom = props.listRooms.filter(i => i.idRoom == idRoom);
     let filtredIdRoom = props.listTasks.map(item => item.items.filter(f => f.idRoom == idRoom && f.id == idTask)).filter(el => el.length > 0).flat();
+    if (!(filteredNameRoom[0] && filtredIdRoom[0])) {
+        return <Navigate replace to='*' />
+    }
+    props.setNameRoom(filteredNameRoom[0].nameRoom);
     filtredIdRoom = filtredIdRoom[0];
     const addComment = (text) => {
-        props.addComment(idRoom, idTask, "Noname", text);
+        props.addComment(idRoom, idTask, props.authorization.authorized.userName, text);
+    }
+    if (!props.authorization.isAuth) {
+        return <Navigate replace to="/login" />
     }
     return (
         <div>
@@ -36,8 +51,9 @@ const TaskPage = (props) => {
                     </div>
                     <div className={classes.footer}>
                         <Formik
-                            initialValues={{text: ''}}
-                            onSubmit={(values, {setSubmiting, resetForm}) => {
+                            initialValues={{ text: '' }}
+                            validationSchema={SignupSchema}
+                            onSubmit={(values, { setSubmiting, resetForm }) => {
                                 addComment(values.text);
                                 resetForm({
                                     values: {
@@ -46,13 +62,16 @@ const TaskPage = (props) => {
                                 })
                                 setSubmiting(false);
                             }}>
-                            <Form>
-                                <div className={classes.fieldWriting}>
-                                    <Field className={classes.textarea} name="text" autocomplete="off"
-                                        type="text" placeholder="Додати коментар" />
-                                </div>
-                                <button className={classes.input} type="submit">Відправити</button>
-                            </Form>
+                            {({ errors, touched }) => (
+                                <Form>
+                                    <div className={classes.fieldWriting}>
+                                        <Field className={classes.textarea} name="text"
+                                            type="text" placeholder="Додати коментар" as="textarea" />
+                                        {errors.text && touched.text ? <div className={classes.error}>{errors.text}</div> : null}
+                                    </div>
+                                    <button className={classes.input} type="submit">Відправити</button>
+                                </Form>
+                            )}
                         </Formik>
                     </div>
                 </div>

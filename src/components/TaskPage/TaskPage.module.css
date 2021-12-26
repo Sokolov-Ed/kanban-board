@@ -17,6 +17,7 @@
 	margin-left: 42px;
 	color: #969696;
 	font-size: 10px;
+	user-select: none;
 }
 .authorTask, .dateAdd {
 	display: inline-block;
@@ -32,12 +33,17 @@
 	margin-top: 100px;
 	margin-left: 42px;
 	font-size: 28px;
+	user-select: none;
 }
 .taskDescription {
     position: absolute;
 	margin-top: 140px;
 	margin-left: 40px;
+	margin-right: 40px;
 	font-size: 14px;
+	white-space: pre-line;
+	word-break: break-word;
+	word-wrap: break-word;
 }
 .fieldDocuments {
     display: flex;
@@ -45,6 +51,7 @@
 	font-size: 18px;
 	position: absolute;
 	margin-left: 40px;
+	z-index: 5;
 }
 .fieldForComments {
     position: absolute;
@@ -92,6 +99,11 @@
 	outline: none;
 	padding: 10px;
 	font-size: 14px;
+}
+.error {
+	font-size: 14px;
+   color: #b72025;
+   user-select: none;
 }
 .input {
     position: absolute;

@@ -1,12 +1,15 @@
 .fieldTask {
     width: 250px;
 	height: 100px;
+	max-height: 100px;
 	background-color: #FFFFFF;
 	border-radius: 15px;
 	padding: 10px;
 	margin: 10px;
 	margin-bottom: 20px;
 	color: black;
+	overflow: hidden;
+	text-overflow: ellipsis ellipsis;
 }
 .whoAuthorTask {
     display: flex;
@@ -31,4 +34,7 @@
     margin-top: 10px;
 	margin-left: 5px;
 	font-size: 10px;
+	white-space: pre-line;
+	word-break: break-word;
+	word-wrap: break-word;
 }

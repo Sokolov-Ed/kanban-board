@@ -6,6 +6,9 @@
 	border-radius: 25px;
 	padding: 7.5px;
     user-select: none;
+	white-space: pre-line;
+	word-break: break-word;
+	word-wrap: break-word;
 }
 .room:hover {
     background-color: #2B74B9;
