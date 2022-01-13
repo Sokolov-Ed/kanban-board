@@ -1,7 +1,16 @@
-Test accounts:
+# Test accounts
 
-admin: login: e.o.sokolov; password: 123
+# admin: 
+login: e.o.sokolov
 
-student: login: i.v.rud; password: 1234567
+password: 123
 
-teacher: login: v.y.dujiy; password: 12345
+# student: 
+login: i.v.rud
+
+password: 1234567
+
+# teacher:
+login: v.y.dujiy
+
+password: 12345
