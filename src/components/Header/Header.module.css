@@ -1,5 +1,5 @@
 .header {
-    position: absolute;
+	position: absolute;
 	background-color: #15499F;
 	width: 100%;
 	height: 50px;
@@ -10,79 +10,121 @@
     color: #FFFFFF;
 	user-select: none;
 }
+
 .iconVectorBack {
+	border: none;
     width: 25px;
 	height: 25px;
 	margin-left: 50px;
+	padding: 5px;
 }
 .iconVectorBack:hover {
-	padding: 5px;
 	border-radius: 5px;
 	background-color: #2B74B9;
 }
-.titleHeader {
-    position: absolute;
-	font-size: 26px;
-	margin-left: 90px;
+.plug {
+	visibility: hidden;
+	opacity: 0;
 }
+
+.titleHeader {
+	font-size: 26px;
+	margin-left: 10px;
+	max-width: 500px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+@media (max-width: 1200px){
+    .iconVectorBack{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 992px){
+    .iconVectorBack{
+        margin-left: 25px;
+    }
+	.titleHeader{
+		font-size: 24px;
+    }
+}
+@media (max-width: 767px){
+    .iconVectorBack{
+        margin-left: 10px;
+    }
+	.titleHeader{
+		font-size: 22px;
+    }
+}
+@media (max-width: 370px){
+    .iconVectorBack{
+        width: 20px;
+		height: 20px;
+    }
+	.titleHeader{
+		font-size: 18px;
+    }
+}
+@media (max-width: 300px){
+	.iconVectorBack{
+        width: 17.5px;
+		height: 17.5px;
+    }
+	.titleHeader{
+		font-size: 16px;
+    }
+}
+
 .fieldUser {
-    position: absolute;
-	right: 7.5%;
+	margin-left: auto;
+	margin-right: 20px;
+	height: 100%;
+	padding: 0 10px;
 	display: flex;
 	align-items: center;
+}
+.fieldUser:hover {
+	background-color: #2B74B9;
 }
 .avaUser {
     width: 35px;
 	height: 35px;
 }
 .nameUser {
+	max-width: 300px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
     margin-left: 15px;
 	font-size: 16px;
 }
 .iconExitSection {
-    position: absolute;
 	width: 25px;
 	height: 25px;
-	right: 3%;
+	margin-right: 35px;
+	padding: 5px;
 }
 .iconExitSection:hover {
-	padding: 5px;
 	border-radius: 5px;
 	background-color: #2B74B9;
 }
-.loginOrRegistration {
-	position: absolute;
-	right: 7.5%;
-	display: flex;
-	align-items: center;
+@media (max-width: 820px){
+    .avaUser {
+		display: none;
+	}
 }
-.login {
-	height: 50px;
-	font-size: 18px;
-	padding-left: 10px;
-	padding-right: 10px;
-	color: #FFFFFF;
-	display: flex;
-	align-items: center;
-	margin-right: -0.3px;
+@media (max-width: 780px){
+    .fieldUser {
+		display: none;
+	}
+	.iconExitSection {
+		margin-left: auto;
+		margin-right: 20px;
+	}
 }
-.login:hover {
-	background-color: #2B74B9;
-}
-.iconVertLine {
-	height: 28px;
-	z-index: 1;
-}
-.registration {
-	height: 50px;
-	font-size: 18px;
-	padding-left: 10px;
-	padding-right: 10px;
-	color: #FFFFFF;
-	display: flex;
-	align-items: center;
-	margin-left: -0.4px;
-}
-.registration:hover {
-	background-color: #2B74B9;
+@media (max-width: 400px){
+	.iconExitSection {
+		width: 20px;
+		height: 20px;
+	}
 }

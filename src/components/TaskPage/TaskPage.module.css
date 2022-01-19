@@ -1,7 +1,14 @@
+.taskPage {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	min-height: 100%;
+	height: max-content;
+}
 .jobField {
-    position: absolute;
 	display: flex;
-	height: 275px;
+	flex-direction: column;
+	height: max-content;
 	width: 94%;
 	margin-left: 50%;
 	margin-right: 50%;
@@ -10,6 +17,7 @@
 	border-radius: 0px 0px 30px 30px;
 	background-color: #FFFFFF;
 	z-index: -1;
+	padding-bottom: 20px; 
 }
 .whoAuthorTask {
     display: flex;
@@ -29,15 +37,11 @@
 	margin-left: 5px;
 }
 .nameTask {
-    position: absolute;
-	margin-top: 100px;
 	margin-left: 42px;
 	font-size: 28px;
 	user-select: none;
 }
 .taskDescription {
-    position: absolute;
-	margin-top: 140px;
 	margin-left: 40px;
 	margin-right: 40px;
 	font-size: 14px;
@@ -49,13 +53,10 @@
     display: flex;
 	margin-top: 190px;
 	font-size: 18px;
-	position: absolute;
 	margin-left: 40px;
 	z-index: 5;
 }
 .fieldForComments {
-    position: absolute;
-	top: 275px;
 	width: 100%;
 	z-index: -2;
 }
@@ -105,15 +106,112 @@
    color: #b72025;
    user-select: none;
 }
-.input {
+.submit {
     position: absolute;
 	left: 4.15%;
 	bottom: 15px;
 	background-color: #15499F;
 	border-radius: 10px;
-	width: 200px;
+	width: 30%;
 	height: 30px;
 	text-align: center;
 	color: #FFFFFF;
 	border: 0px;
+}
+.submit:hover {
+	background-color: #2B74B9;
+}
+@media (max-width: 1000px){
+	.whoAuthorTask{
+		margin-left: 35px;
+	}
+	.nameTask{
+		margin-left: 35px;
+	}
+	.taskDescription{
+		margin-left: 35px;
+	}
+	.fieldDocuments{
+		margin-left: 35px;
+	}
+}
+@media (max-width: 800px){
+	.jobField {
+		border-radius: 0 0 25px 25px;
+	}
+	.footer {
+		border-radius: 25px 25px 0 0;
+	}
+	.whoAuthorTask{
+		margin-left: 30px;
+	}
+	.nameTask{
+		margin-left: 30px;
+	}
+	.taskDescription{
+		margin-left: 30px;
+	}
+	.fieldDocuments{
+		margin-left: 30px;
+	}
+}
+@media (max-width: 600px){
+	.jobField {
+		border-radius: 0 0 20px 20px;
+	}
+	.footer {
+		border-radius: 20px 20px 0 0;
+	}
+	.whoAuthorTask{
+		margin-left: 25px;
+	}
+	.nameTask{
+		margin-left: 25px;
+	}
+	.taskDescription{
+		margin-left: 25px;
+	}
+	.fieldDocuments{
+		margin-left: 25px;
+	}
+}
+@media (max-width: 400px){
+	.jobField {
+		border-radius: 0 0 15px 15px;
+	}
+	.footer {
+		border-radius: 15px 15px 0 0;
+	}
+	.whoAuthorTask{
+		margin-left: 20px;
+	}
+	.nameTask{
+		margin-left: 20px;
+	}
+	.taskDescription{
+		margin-left: 20px;
+	}
+	.fieldDocuments{
+		margin-left: 20px;
+	}
+}
+@media (max-width: 300px){
+	.jobField {
+		border-radius: 0 0 10px 10px;
+	}
+	.footer {
+		border-radius: 10px 10px 0 0;
+	}
+	.whoAuthorTask{
+		margin-left: 15px;
+	}
+	.nameTask{
+		margin-left: 15px;
+	}
+	.taskDescription{
+		margin-left: 15px;
+	}
+	.fieldDocuments{
+		margin-left: 15px;
+	}
 }

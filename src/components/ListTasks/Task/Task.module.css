@@ -1,5 +1,5 @@
 .fieldTask {
-    width: 250px;
+    width: 240px;
 	height: 100px;
 	max-height: 100px;
 	background-color: #FFFFFF;
@@ -37,4 +37,10 @@
 	white-space: pre-line;
 	word-break: break-word;
 	word-wrap: break-word;
+}
+@media (max-width: 310px){
+	.fieldTask {
+		width: 225px;
+		border-radius: 10px;
+	}
 }

@@ -28,7 +28,7 @@ const TaskPage = (props) => {
         return <Navigate replace to="/login" />
     }
     return (
-        <div>
+        <div className={classes.taskPage}>
             {filtredIdRoom &&
                 <div>
                     <div className={classes.jobField}>
@@ -37,8 +37,7 @@ const TaskPage = (props) => {
                         </div>
                         <div className={classes.nameTask}>{filtredIdRoom.nameTask}</div>
                         <div className={classes.taskDescription}>{filtredIdRoom.description}</div>
-                        <div classNameme={classes.fieldDocuments}>
-                        </div>
+                        <div classNameme={classes.fieldDocuments}></div>
                     </div>
                     <div className={classes.fieldForComments}>
                         <div className={classes.fieldComments}>
@@ -69,7 +68,7 @@ const TaskPage = (props) => {
                                             type="text" placeholder="Додати коментар" as="textarea" />
                                         {errors.text && touched.text ? <div className={classes.error}>{errors.text}</div> : null}
                                     </div>
-                                    <button className={classes.input} type="submit">Відправити</button>
+                                    <button className={classes.submit} type="submit">Відправити</button>
                                 </Form>
                             )}
                         </Formik>

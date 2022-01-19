@@ -76,7 +76,7 @@ const ListTasks = (props) => {
         props.setShowCreateTask(true);
     }
     return (
-        <div>
+        <div className={classes.listTaskPages}>
             {props.isShowCreateTask && <CreateTask setShowCreateTask={props.setShowCreateTask}
                                             idRoom={id} author={props.authorization.authorized.userName}
                                             addTask={props.addTask}/>}
